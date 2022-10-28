@@ -1,0 +1,21 @@
+let nimi;
+let luku;
+nimi = "Ronja";
+luku = 20;
+
+document.getElementById("demo").innerHTML = nimi;
+document.getElementById("demo1").innerHTML = luku;
+let tulos = nimi + luku;
+document.getElementById("demo2").innerHTML = tulos;
+tulos = nimi + (luku + luku);
+document.getElementById("demo3").innerHTML = tulos;
+let luku1 = 20;
+let luku2 = 21;
+let totuus = (luku == luku1);
+document.getElementById("demo4").innerHTML = totuus;
+totuus = (luku == luku2);
+document.getElementById("demo5").innerHTML = totuus;
+let mopot = ["Suzuki", "Solifer", "Honda"];
+document.getElementById("demo6").innerHTML = "Nollasolu on " + mopot[0] + " ja toinen solu on " + mopot[2];
+let koira = { nimi: "Moppe", laji: "sekarotuinen", ika: 4, vari: "ruskea" };
+document.getElementById("demo7").innerHTML = "Koira nimeltä " + koira.nimi + "sen rotu on " + koira.laji + "sen ikä on " + koira.ika + "ja sen väri on " + koira.vari  ;

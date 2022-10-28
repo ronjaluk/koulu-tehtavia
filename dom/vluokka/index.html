@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- Tämä on minun portolioni -->
+<html lang="fi">
+
+<head>
+  <!-- charset määrittää merkistön -->
+  <meta charset="UTF-8" />
+  <!-- viewport on responsiivisuuden perusta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Ronja Lukkarinen" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Tehtävä 1</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- google-fontit saa tällä tavalla käyttöönsä -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<style>
+  .punainen {
+    color: rgb(255, 25, 25);
+    text-align: center;
+    font-size: 50px;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #333;
+    border-width: 2px;
+    padding: 20px;
+    width: 150px;
+    height: 200px;
+    position: relative;
+  }
+
+  p {
+    float: left;
+  }
+
+  .musta {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 50px;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #333;
+    border-width: 2px;
+    padding: 20px;
+    width: 150px;
+    height: 200px;
+    position: relative;
+  }
+
+  .a {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+</style>
+
+<body>
+  <!-- Header osassa on yleensä valikko eli nav, jossa listana linkit -->
+  <header>
+    <div id="logo">
+      <a href="../../index.html">Ronjan Java-script ohjelmia</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../../teht/index.html">Tehtäviä</a></li>
+        <li><a href="../../luvut/index.html">Luvut-ohjelmia</a></li>
+        <li><a href="../../robotto/index.html">Robotto-ohjelma</a></li>
+        <li><a href="../../ventti/index.html">Ventti-ohjelma</a></li>
+        <li><a href="../../dom/index.html">Dom-ohjelma</a></li>
+        <li><a href="../../index.html#footer">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Main osassa on sivun sisältö. Voi olla section tai div osia myös -->
+    <div class="container">
+      <section id="hand">
+
+        <h1>Jakajan kortit</h1>
+        <p id="kortti1"></p>
+        <p id="kortti2"></p>
+        <p id="kortti3"></p>
+        <p id="kortti4"></p>
+        <p id="kortti5"></p>
+        <br>
+    </div>
+    <section>
+      <a id="summa"></a>
+      <b><a id="havio"></a><b>
+    </section>
+
+    <br>
+
+    <div>
+      <h1>Pelaajan kortit</h1>
+      <p id="uusiKortti"></p>
+      <p id="uusiKortti1"></p>
+      <p id="kortti8"></p>
+      <p id="kortti9"></p>
+      <p id="kortti10"></p>
+    </div>
+
+    <section>
+      <a id="summa2"></a>
+      <b><a id="voitto"></a><b>
+    </section>
+    </section>
+
+    <div>
+      <a id="status"></a> <br>
+      <button id="nappi">NOSTA</button>
+      <button id="nappi1">JÄÄ</button>
+      <button id="nappi2">UUSI PELI</button>
+    </div>
+
+    <script src="maa.js"></script>
+    <script src="kortti.js"></script>
+    <script src="pakka.js"></script>
+    <script src="kasi.js"></script>
+    <script src="kayttoliittyma.js"></script>
+
+    </div>
+  </main>
+</body>
+
+</html>

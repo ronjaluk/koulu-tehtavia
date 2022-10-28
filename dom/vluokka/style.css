@@ -1,0 +1,449 @@
+:root {
+    --background-color: rgba(255, 255, 255, 0.9);
+    --primary-color: coral;
+    --light-color: #fff;
+    --dark-color: #333;
+    --font: "Work Sans", sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--font);
+    line-height: 1.5;
+  }
+  
+  /* Utilities */
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    padding: 3rem;
+    border-radius: 2px;
+    position: relative;
+  }
+  
+  h1,
+  h2,
+  h3,
+  p {
+    margin-bottom: 2rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    margin-top: 2rem;
+    text-transform: uppercase;
+  }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* Header area */
+  
+  header {
+    background: var(--dark-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    top: 0;
+    left: 0;
+  }
+  
+  #logo a {
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    display: block;
+    padding: 0 1rem;
+  }
+  
+  /* Main navigation */
+  
+  nav ul {
+    list-style-type: none;
+    padding: 1rem;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    color: var(--light-color);
+    text-decoration: none;
+    padding: 1rem;
+  }
+  nav ul li a:hover {
+    background: var(--primary-color);
+  }
+  
+  /* Sections  */
+  main {
+    margin-top: 88px;
+  }
+  section {
+    min-height: 25vh;
+    width: 100%;
+    padding: 3rem;
+    line-height: 1.6rem;
+  }
+  
+  /* Hero Banner */
+  
+  #hero-banner::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: var(--dark-color);
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+  }
+  
+  #hero-banner {
+    height: 75vh;
+    position: relative;
+    background: url("https://source.unsplash.com/1600x900/?laptop") no-repeat
+      fixed center center/cover;
+  }
+  
+  #hero-banner .container {
+    background: transparent;
+    color: var(--light-color);
+    line-height: 1.6;
+  }
+  
+  #hero-banner h1 {
+    text-shadow: 0 0 1px var(--primary-color);
+  }
+  
+  #hero-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+  }
+  
+  #hero-banner a {
+    display: inline-block;
+    font-size: 1.2rem;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border: none;
+    padding: 1rem 1rem;
+    color: var(--light-color);
+  }
+  
+  /* Past */
+  
+  #past {
+    background: #f4f4f4;
+  }
+  
+  .past_boxes {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #past .box {
+    background-color: var(--light-color);
+    width: 33.3%;
+    border-radius: 2px;
+    margin: 1rem;
+    box-shadow: 0 0 5px rgb(172, 172, 172);
+    padding: 1rem;
+  }
+  
+  #past .box:hover {
+    box-shadow: 0 0 25px rgb(172, 172, 172);
+  }
+  
+  #past .box img {
+    width: 100%;
+    border-radius: 2px;
+  }
+  
+  #past .container {
+    background-color: transparent;
+  }
+  
+  /* Present  */
+  #present {
+    background: #e3e3e3;
+  }
+  
+  #present img {
+    width: 35%;
+    margin: 0 1rem 1rem 0;
+    float: left;
+  }
+  .hobbies_group {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .hobby {
+    height: 125px;
+    width: 125px;
+    display: inline-block;
+    background-color: rgb(232, 232, 232);
+    box-shadow: inset 0 0 10px rgb(189, 189, 189);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hobby:nth-child(odd) {
+    background-color: rgb(184, 184, 184);
+  }
+  
+  .hobby p {
+    margin: 0;
+  }
+  
+  .material-icons.md-48 {
+    font-size: 48px;
+    color: var(--primary-color);
+  }
+  
+  /* Future */
+  #future {
+    background: url("https://source.unsplash.com/random") no-repeat fixed center
+      center/cover;
+  }
+  
+  .future-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  
+  /* Gallery */
+  .gallery-group {
+    display: grid;
+    grid-template-areas:
+      "a a b b c c"
+      "a a d d c c"
+      "e h h h c c"
+      "f h h h i i"
+      "g h h h i i";
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .grid-div {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .grid-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .grid-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .grid-item-1 {
+    grid-area: a;
+  }
+  .grid-item-2 {
+    grid-area: b;
+  }
+  .grid-item-3 {
+    grid-area: c;
+  }
+  .grid-item-4 {
+    grid-area: d;
+  }
+  .grid-item-5 {
+    grid-area: e;
+  }
+  .grid-item-6 {
+    grid-area: f;
+  }
+  .grid-item-7 {
+    grid-area: g;
+  }
+  .grid-item-8 {
+    grid-area: h;
+  }
+  .grid-item-9 {
+    grid-area: i;
+  }
+  
+  /* Footer */
+  
+  footer {
+    background: var(--dark-color);
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+  }
+  
+  footer .form-group {
+    margin: 2rem;
+  }
+  
+  footer .form-group label {
+    width: 200px;
+    display: inline-block;
+    text-align: left;
+  }
+  
+  footer .form-group input,
+  footer .form-group textarea {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    width: 30%;
+    font-size: 1rem;
+    font-family: var(--font);
+  }
+  
+  footer .form-group textarea {
+    min-height: 100px;
+  }
+  
+  footer button {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-size: inherit;
+  }
+  
+  footer p {
+    margin-top: 3rem;
+    font-size: 12px;
+  }
+
+  /*kortit */
+
+  .jakajan,
+.pelaajan {
+    display: flex;
+}
+
+.kortti {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100px;
+  height: 200px;
+  border: rgb(15, 3, 3);
+  border-style: solid;
+  border-width: thin;
+  border-radius: 18px;
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+  .punainen{
+    color: red;
+  }
+  .musta{
+    color: black;
+  }
+
+  
+  /* Media queries (NB! this is desktop first approach) */
+  
+  /* Extra small devices (portrait phones, less than 576px) */
+  @media (max-width: 575.98px) {
+    header {
+      display: block;
+      position: relative;
+    }
+    #logo a {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      padding: 0;
+    }
+    nav ul {
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li {
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li a {
+      display: inline-block; 
+      padding: 0 0.5rem 0 0;
+    }
+    section,
+    .container {
+      padding: 1rem;
+    }
+  
+    #hero-banner {
+      height: 100%;
+    }
+    #hero-banner .container {
+      line-height: 1.3;
+    }
+    #hero-banner h2 {
+      font-size: 2rem;
+    }
+  
+    #hero-banner p {
+      font-size: 1rem;
+      margin-bottom: 3rem;
+    }
+  
+    #hero-banner a {
+      font-size: 1rem;
+      padding: 1rem 0.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    .past_boxes {
+      flex-direction: column;
+    }
+    #past .box {
+      width: 100%;
+      margin: 1rem 0;
+    }
+    #present .hobby {
+      width: 100px;
+      height: 100px;
+      margin: 1rem;
+    }
+    #footer .form-group {
+      text-align: left;
+      padding: 0;
+      margin: 2rem 0;
+    }
+    #footer .form-group input,
+    #footer .form-group textarea {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+  }

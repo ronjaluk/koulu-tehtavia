@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- Tämä on minun portolioni -->
+<html lang="fi">
+
+<head>
+  <!-- charset määrittää merkistön -->
+  <meta charset="UTF-8" />
+  <!-- viewport on responsiivisuuden perusta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Ronja Lukkarinen" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Tehtävä 2</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- google-fontit saa tällä tavalla käyttöönsä -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header osassa on yleensä valikko eli nav, jossa listana linkit -->
+  <header>
+    <div id="logo">
+      <a href="../index.html">Ronjan Java-script ohjelmia</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../teht/index.html">Tehtäviä</a></li>
+              <li><a href="../luvut/index.html">Luvut-ohjelmia</a></li>
+              <li><a href="../robotto/index.html">Robotto-ohjelma</a></li>
+              <li><a href="../ventti/index.html">Ventti-ohjelma</a></li>
+              <li><a href="../dom/index.html">Dom-ohjelma</a></li>
+              <li><a href="#footer">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Main osassa on sivun sisältö. Voi olla section tai div osia myös -->
+    <div class="container">
+      <h1>Ventti ohjelma</h1>
+      <p id="demo"></p>
+    </div>
+    <div class="jakaja">
+      <h1>Jakajan kortit</h1>
+      <p id="kortti1"></p>
+      <p id="kortti2"></p>
+      <p id="kortti3"></p>
+      <p id="kortti4"></p>
+      <p id="kortti5"></p>
+      <br>
+    </div>
+
+    <br>
+
+    <div>
+    <h1>Pelaajan kortit</h1>
+    <p id="kortti6"></p>
+    <p id="kortti7"></p>
+    <p id="kortti8"></p>
+    <p id="kortti9"></p>
+    <p id="kortti10"></p>
+    </div>
+
+      <input type="button" value=" Nosta " onclick="Lisaa()">
+
+      <input type="button" value=" Lopeta " onclick="Lopeta()">
+
+    <script src="skriptit.js"></script>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Tämä on minun portolioni -->
+<html lang="fi">
+
+<head>
+  <!-- charset määrittää merkistön -->
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <meta charset="UTF-8" />
+  <!-- viewport on responsiivisuuden perusta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Ronja Lukkarinen" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Ronjan Javascript-ohjelmia</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- google-fontit saa tällä tavalla käyttöönsä -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header osassa on yleensä valikko eli nav, jossa listana linkit -->
+  <header>
+    <div id="logo">
+      <a href="../index.html">Ronjan Java-script ohjelmia</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../teht/index.html">Tehtäviä</a></li>
+        <li><a href="../luvut/index.html">Luvut-ohjelmia</a></li>
+        <li><a href="../robotto/index.html">Robotto-ohjelma</a></li>
+        <li><a href="../ventti/index.html">Ventti-ohjelma</a></li>
+        <li><a href="../dom/index.html">Dom-ohjelma</a></li>
+        <li><a href="#footer">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Main osassa on sivun sisältö. Voi olla section tai div osia myös -->
+    <section >
+    <div class="container">
+      <h1>Tässä on robotto-ohjelma</h1>
+      <p>näyttää sivulla Robotto-robotin paikallaan seisten ja sen yläpuolelle kentän, johon käyttäjä kirjoittaa
+        komennon. Lisää myös painike Suorita ja painike Lopeta.</p>
+      <p>kun käyttäjä kirjoittaa kenttään satunnaista tekstiä ja klikkaa Suorita painiketta, niin alert-ikkunaan
+        tulostetaan Syntax Error!</p>
+      <p>kun käyttäjä kirjoittaa kenttään robotto.wave(); niin Robotto-robotti heiluttaa käsiään kunnes painetaan Lopeta
+        painiketta.</p>
+      <p>kun käyttäjä kirjoittaa kenttään robotto.jump(); niin Robotto-robotti hyppää kunnes painetaan Lopeta
+        painiketta.</p>
+      <p>kun käyttäjä kirjoittaa kenttään robotto.walk(); niin Robotto-robotti kävelee paikallaan (Moonwalk) kunnes
+        painetaan Lopeta painiketta.</p>
+        <form name="lomake">
+          <input type="text" name="teksti">
+          <br />
+          <br />
+          <input type="button" value=" Suorita " onclick="Suorita()">
+          <input type="button" value=" Lopeta " onclick="Tyhja()">
+        </form>
+        <p></p>
+        <p id="nayta">
+        <img class='robotti1' src='robotti.png' width=30%>
+      </p>
+    </div>
+  </section>
+  </main>
+</body>
+<script src="skriptit.js"></script>
+</html>
